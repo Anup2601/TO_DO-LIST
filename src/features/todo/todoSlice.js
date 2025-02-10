@@ -19,7 +19,7 @@ const initialState = {
 
       },
       deleteTodo:(state,action)=>{
-        state.todos= state.todos.filter((todo)=>{todo.id!=action.payload});
+        state.todos= state.todos.filter((todo)=>{todo.id!==action.payload});
       },
       markasDone: (state,action)=>{
         state.todos= state.todos.map=((todo)=>{
